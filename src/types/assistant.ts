@@ -1,16 +1,15 @@
-export type AssistantLanguage = 'es' | 'en' | 'pt';
+export type AssistantLanguage = 'Español' | 'Inglés' | 'Portugués';
 
 export type AssistantTone =
-    | 'formal'
-    | 'casual'
-    | 'professional'
-    | 'friendly';
+    | 'Formal'
+    | 'Casual'
+    | 'Profesional'
+    | 'Amigable';
 
-export interface AssistantResponseConfig {
+export interface AssistantResponseLength {
     short: number;
     medium: number;
     long: number;
-    audioEnabled: boolean;
 }
 
 export interface Assistant {
@@ -18,6 +17,7 @@ export interface Assistant {
     name: string;
     language: AssistantLanguage;
     tone: AssistantTone;
-    responseConfig: AssistantResponseConfig;
-    createdAt: string;
+    responseLength: AssistantResponseLength;
+    audioEnabled: boolean;
+    rules: string;
 }
