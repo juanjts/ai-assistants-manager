@@ -33,11 +33,13 @@ Se requiere Node.js 18 o superior (Versión recomendada: 24.13.0 LTS).
 
 ### Habilitar Corepack y activar pnpm
 
-``` corepack enable corepack prepare pnpm@latest --activate ```
+``` corepack enable ```
 
 ### Verificar instalaciones
 
-``` node -v pnpm -v ```
+``` node -v ```
+
+``` pnpm -v ```
 
 
 ### 3. Instalar dependencias y ejecutar
