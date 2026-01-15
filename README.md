@@ -60,12 +60,19 @@ Accede a: http://localhost:3000
 **Luego, intenta nuevamente con pnpm install.**
 
 ### 📂 Estructura base del proyecto
+```
 src/  ├── app/ # App Router (Next.js)
-      ├── components/ # Componentes reutilizables 
-      ├── store/ # Zustand (estado global) 
-      ├── services/ # Servicios simulados (CRUD) 
-      ├── hooks/ # Hooks personalizados 
+
+      ├── components/ # Componentes reutilizables
+
+      ├── store/ # Zustand (estado global)
+
+      ├── services/ # Servicios simulados (CRUD)
+
+      ├── hooks/ # Hooks personalizados
+
       ├── types/ # Tipos TypeScript
+```
 
 ### 🎯 Objetivo del Proyecto
 Este proyecto fue desarrollado para demostrar:
