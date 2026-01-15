@@ -25,6 +25,7 @@ Linting: ESLint
 
 ### 1. Clonar el repositorio
 ``` git clone https://github.com/juanjts/ai-assistants-manager.git ```
+
 ``` cd ai-assistants-manager ```
 
 ### 2. Configurar Node.js y pnpm
@@ -40,16 +41,20 @@ Se requiere Node.js 18 o superior (Versión recomendada: 24.13.0 LTS).
 ### 3. Instalar dependencias y ejecutar
 
 ** Instalar dependencias **
+
 ``` pnpm install ```
 
 ** Ejecutar el proyecto **
+
 ``` pnpm dev ```
 
 ### 4. Abrir en el navegador
 Accede a: http://localhost:3000
 
 ** [!TIP] Solución a errores de permisos: Si pnpm no es reconocido en Windows (PowerShell), ejecuta el siguiente comando: **
+
 ``` Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned ```
+
 ** Luego, intenta nuevamente con pnpm install. **
 
 ### 📂 Estructura base del proyecto
