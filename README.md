@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#🤖 AI Assistants Manager
+Aplicación web desarrollada con Next.js (App Router) que permite crear, listar, editar y eliminar asistentes de IA, con una arquitectura enfocada en gestión de estado profesional, experiencia de usuario y código mantenible.
 
-## Getting Started
+[!IMPORTANT] Nota sobre persistencia: El proyecto no utiliza persistencia real. Los datos viven en memoria durante la sesión y se reinician al recargar la página. El objetivo es evaluar arquitectura, estado y UX, no backend.
 
-First, run the development server:
+##🧱 Stack Tecnológico
+Framework: Next.js (App Router)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Lenguaje: TypeScript
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Estilos: Tailwind CSS
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Estado global: Zustand
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Operaciones async: TanStack React Query
 
-## Learn More
+Formularios: React Hook Form
 
-To learn more about Next.js, take a look at the following resources:
+Gestor de paquetes: pnpm (usando Corepack)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Linting: ESLint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+##🚀 Guía paso a paso para correr el proyecto localmente
 
-## Deploy on Vercel
+###1. Clonar el repositorio
+```git clone https://github.com/juanjts/ai-assistants-manager.git```
+```cd ai-assistants-manager```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+###2. Configurar Node.js y pnpm
+Se requiere Node.js 18 o superior (Versión recomendada: 24.13.0 LTS).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+###Habilitar Corepack y activar pnpm
+```corepack enable corepack prepare pnpm@latest --activate```
+
+###Verificar instalaciones
+```node -v pnpm -v```
+
+
+###3. Instalar dependencias y ejecutar
+
+**Instalar dependencias**
+```pnpm install```
+
+**Ejecutar el proyecto**
+```pnpm dev```
+
+###4. Abrir en el navegador
+Accede a: http://localhost:3000
+
+**[!TIP] Solución a errores de permisos: Si pnpm no es reconocido en Windows (PowerShell), ejecuta el siguiente comando: **
+```Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned```
+**Luego, intenta nuevamente con pnpm install.**
+
+###📂 Estructura base del proyecto
+src/  ├── app/ # App Router (Next.js)
+      ├── components/ # Componentes reutilizables 
+      ├── store/ # Zustand (estado global) 
+      ├── services/ # Servicios simulados (CRUD) 
+      ├── hooks/ # Hooks personalizados 
+      ├── types/ # Tipos TypeScript
+
+###🎯 Objetivo del Proyecto
+Este proyecto fue desarrollado para demostrar:
+
+Manejo de estado: Sincronización entre Zustand y React Query.
+Arquitectura: Estructura escalable en Next.js App Router.
+Buenas prácticas: Validaciones en formularios, gestión de tipos y UX intuitiva.
+Clean Code: Separación clara de responsabilidades y código legible.
+
+###📌 Notas Finales
+No se requiere base de datos ni un backend real.
+
+El foco está 100% en la arquitectura del frontend y la experiencia de usuario.
+
+
+
+*Desarrollado por Juan JTS*
