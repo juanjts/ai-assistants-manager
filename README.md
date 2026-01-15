@@ -32,30 +32,32 @@ Linting: ESLint
 Se requiere Node.js 18 o superior (Versión recomendada: 24.13.0 LTS).
 
 ### Habilitar Corepack y activar pnpm
+
 ``` corepack enable corepack prepare pnpm@latest --activate ```
 
 ### Verificar instalaciones
+
 ``` node -v pnpm -v ```
 
 
 ### 3. Instalar dependencias y ejecutar
 
-** Instalar dependencias **
+**Instalar dependencias**
 
 ``` pnpm install ```
 
-** Ejecutar el proyecto **
+**Ejecutar el proyecto**
 
 ``` pnpm dev ```
 
 ### 4. Abrir en el navegador
 Accede a: http://localhost:3000
 
-** [!TIP] Solución a errores de permisos: Si pnpm no es reconocido en Windows (PowerShell), ejecuta el siguiente comando: **
+**[!TIP] Solución a errores de permisos: Si pnpm no es reconocido en Windows (PowerShell), ejecuta el siguiente comando:**
 
 ``` Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned ```
 
-** Luego, intenta nuevamente con pnpm install. **
+**Luego, intenta nuevamente con pnpm install.**
 
 ### 📂 Estructura base del proyecto
 src/  ├── app/ # App Router (Next.js)
@@ -79,4 +81,4 @@ El foco está 100% en la arquitectura del frontend y la experiencia de usuario.
 
 
 
-* Desarrollado por Juan JTS *
+Desarrollado por Juan JTS*
